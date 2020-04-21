@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(55, 53, 65),rgb(36, 32, 32), rgb(26, 23, 23));
+}
+#canva1{
+    margin: 2vh;
+    margin-top: 4vh;
+    width: 112vh;
+    height: 80vh;
+}
+#canva2{
+    margin: 2vh;
+    margin-top: 4vh;
+    width: 112vh;
+    height: 75vh;
+}
+#painel-central{
+    width: 130vh;
+    height: 88vh;
+
+    margin: 5vh;
+    margin-bottom: 7vh;
+
+    background: linear-gradient(rgb(36, 32, 32), rgb(41, 36, 36), rgb(55, 53, 65));
+    border-radius: 20vh 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: borderRadius 60s infinite;
+}
+
+#game-escolha{
+    margin: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-escolha button{
+    background: none;
+    border: none;
+}
+
+#game-escolha button a{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5vh;
+    color: whitesmoke;
+}
+
+#game-escolha button{
+    margin: 5vh;
+    padding: 3vh;
+
+    border-radius: 5vh 3vh;
+}
+
+button:hover{
+    transition: 2s;
+    box-shadow: 0 0 5vh #21ebff;
+    animation: borderRadius 1s;
+}
+@keyframes borderRadius{
+    0%, 100%{
+        border-radius: 20vh 5vh;
+    }
+    50%{
+        border-radius: 5vh 20vh;
+    }
+}
